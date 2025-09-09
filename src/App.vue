@@ -15,6 +15,18 @@
     <!-- Benefits Section -->
     <BenefitsSection />
     
+    <!-- Testimonials Section -->
+    <TestimonialsSection />
+    
+    <!-- Pricing Calculator Section -->
+    <PricingCalculator />
+    
+    <!-- FAQ Section -->
+    <FAQSection />
+    
+    <!-- Newsletter Signup -->
+    <NewsletterSignup />
+    
     <!-- Partners Section -->
     <PartnersSection />
     
@@ -26,6 +38,9 @@
     
     <!-- Scroll to Top Button -->
     <ScrollToTop />
+    
+    <!-- Cookie Consent -->
+    <CookieConsent />
   </div>
 </template>
 
@@ -35,8 +50,13 @@ import HeroSection from './components/HeroSection.vue'
 import ServicesSection from './components/ServicesSection.vue'
 import FeaturesSection from './components/FeaturesSection.vue'
 import BenefitsSection from './components/BenefitsSection.vue'
+import TestimonialsSection from './components/TestimonialsSection.vue'
+import PricingCalculator from './components/PricingCalculator.vue'
+import FAQSection from './components/FAQSection.vue'
+import NewsletterSignup from './components/NewsletterSignup.vue'
 import PartnersSection from './components/PartnersSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import Footer from './components/Footer.vue'
 import ScrollToTop from './components/ScrollToTop.vue'
+import CookieConsent from './components/CookieConsent.vue'
 </script>

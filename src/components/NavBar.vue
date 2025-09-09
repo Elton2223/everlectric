@@ -43,6 +43,16 @@
               Features
             </a>
             <a 
+              href="#pricing" 
+              @click="(e) => handleNavClick(e, '#pricing')"
+              :class="[
+                'px-3 py-2 text-sm font-medium transition-colors duration-200',
+                activeSection === 'pricing' ? 'text-electric-400' : 'text-white hover:text-electric-400'
+              ]"
+            >
+              Pricing
+            </a>
+            <a 
               href="#contact" 
               @click="(e) => handleNavClick(e, '#contact')"
               :class="[
@@ -108,6 +118,16 @@
           Features
         </a>
         <a 
+          href="#pricing" 
+          @click="(e) => handleNavClick(e, '#pricing')"
+          :class="[
+            'block px-3 py-2 text-base font-medium transition-colors duration-200',
+            activeSection === 'pricing' ? 'text-electric-400' : 'text-white hover:text-electric-400'
+          ]"
+        >
+          Pricing
+        </a>
+        <a 
           href="#contact" 
           @click="(e) => handleNavClick(e, '#contact')"
           :class="[
@@ -160,7 +180,7 @@ const handleNavClick = (e, sectionId) => {
 const activeSection = ref('home')
 
 const updateActiveSection = () => {
-  const sections = ['home', 'services', 'features', 'contact']
+  const sections = ['home', 'services', 'features', 'testimonials', 'pricing', 'faq', 'contact']
   const scrollPosition = window.scrollY + 100
 
   for (const section of sections) {

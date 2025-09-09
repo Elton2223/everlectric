@@ -35,6 +35,8 @@
             <li><a href="#home" class="text-gray-300 hover:text-electric-400 transition-colors duration-200">Home</a></li>
             <li><a href="#services" class="text-gray-300 hover:text-electric-400 transition-colors duration-200">Services</a></li>
             <li><a href="#features" class="text-gray-300 hover:text-electric-400 transition-colors duration-200">Features</a></li>
+            <li><a href="#pricing" class="text-gray-300 hover:text-electric-400 transition-colors duration-200">Pricing</a></li>
+            <li><a href="#faq" class="text-gray-300 hover:text-electric-400 transition-colors duration-200">FAQ</a></li>
             <li><a href="#contact" class="text-gray-300 hover:text-electric-400 transition-colors duration-200">Contact</a></li>
           </ul>
         </div>
@@ -58,8 +60,8 @@
           © 2025 Everlectric. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Terms of Service</a>
+          <a href="/privacy-policy" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
+          <a href="/terms-of-service" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Terms of Service</a>
           <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Cookie Policy</a>
         </div>
       </div>
