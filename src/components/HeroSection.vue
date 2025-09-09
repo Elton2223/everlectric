@@ -29,10 +29,16 @@
         
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.6s;">
-          <button class="glass-strong px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white/20 transition-all duration-300 electric-glow">
+          <button 
+            @click="scrollToContact"
+            class="glass-strong px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white/20 transition-all duration-300 electric-glow"
+          >
             Start Your Journey
           </button>
-          <button class="glass px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white/10 transition-all duration-300">
+          <button 
+            @click="scrollToServices"
+            class="glass px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white/10 transition-all duration-300"
+          >
             Learn More
           </button>
         </div>
@@ -65,5 +71,24 @@
 </template>
 
 <script setup>
-// No additional logic needed for this component
+// Smooth scrolling functions
+const scrollToContact = () => {
+  const element = document.querySelector('#contact')
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
+
+const scrollToServices = () => {
+  const element = document.querySelector('#services')
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
 </script>

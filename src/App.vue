@@ -23,6 +23,9 @@
     
     <!-- Footer -->
     <Footer />
+    
+    <!-- Scroll to Top Button -->
+    <ScrollToTop />
   </div>
 </template>
 
@@ -35,4 +38,5 @@ import BenefitsSection from './components/BenefitsSection.vue'
 import PartnersSection from './components/PartnersSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import Footer from './components/Footer.vue'
+import ScrollToTop from './components/ScrollToTop.vue'
 </script>

@@ -52,3 +52,43 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-blue-400;
 }
+
+/* Additional animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+}
+
+/* Improved hover effects */
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.glass-strong:hover {
+  transform: translateY(-1px);
+}
